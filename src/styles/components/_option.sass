@@ -1,0 +1,42 @@
+.option
+    border-bottom: 1px solid lighten($light-blue,10% )
+    display: flex
+    justify-content: space-between
+    padding: $l-size $m-size
+
+
+.option__text
+    color: white
+    font-weight: 500
+    font-size: 2rem
+    margin: 0
+
+.option__warning
+    color: $off-white
+    font-style: italic
+    font-size: 2rem
+    padding: 0 $m-size
+    margin: $m-size 0 0 0
+
+.add-option
+    display: flex
+    padding: $m-size
+    flex-direction: column
+
+
+.add-option__input
+    background: $dark-blue
+    flex-grow: 1
+    border: none
+    border-bottom: 0.6rem solid darken($dark-blue,10% )
+    margin-right: 0 0 $s-size 0
+    padding: $s-size
+    color: $off-white
+
+
+@media ( max-width: $desktop-bodybreak)
+    .add-option
+        flex-direction: row
+    
+    .add-option__input
+        margin-right: 0 $s-size 0 0
